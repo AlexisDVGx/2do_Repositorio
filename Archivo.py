@@ -1,0 +1,1 @@
+print("Ya me canse de escribir codigo, me voy a dormir")
