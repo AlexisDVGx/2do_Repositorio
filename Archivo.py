@@ -1,1 +1,1 @@
-print("Ya me canse de escribir codigo, me voy a dormir")
+print("Ya me canse de escribir codigo, me voy a dormir jijiji ja")
