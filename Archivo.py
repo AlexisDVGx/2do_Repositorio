@@ -1,1 +1,1 @@
-print("Ya me canse de escribir codigo, me voy a dormir jijiji ja")
+print("A ver si es cierto que se tiene que hacer un commit para que se suba el archivo al repositorio, waos")
