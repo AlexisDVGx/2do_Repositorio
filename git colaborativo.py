@@ -12,9 +12,13 @@ class GestorCalificaciones:
             # BUG 1: Lógica incorrecta en la suma
             suma += nota 
         
-        # BUG 2: Posible división por cero si la lista de notas está vacía
-        promedio = suma / len(notas) 
-        return promedio
+        
+        # BUG 2 Resuelto: Validación para evitar división por cero
+    if len(notas) == 0:
+        return 0  # O el valor por defecto que tu equipo decida retornar si no hay notas
+    
+    promedio = suma / len(notas)
+    return promedio
 
     def obtener_mejor_estudiante(self):
         mejor_promedio = 0
