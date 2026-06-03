@@ -10,7 +10,7 @@ class GestorCalificaciones:
         suma = 0
         for nota in notas:
             # BUG 1: Lógica incorrecta en la suma
-            suma -= nota 
+            suma += nota 
         
         # BUG 2: Posible división por cero si la lista de notas está vacía
         promedio = suma / len(notas) 
