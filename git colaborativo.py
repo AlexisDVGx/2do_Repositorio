@@ -6,6 +6,8 @@ class GestorCalificaciones:
         self.estudiantes[nombre] = calificaciones
 
     def calcular_promedio(self, nombre):
+        if nombre not in self.estudiantes:
+            return 0.0 
         notas = self.estudiantes[nombre]
         suma = 0
         for nota in notas:
@@ -20,8 +22,8 @@ class GestorCalificaciones:
         mejor_promedio = 0
         mejor_estudiante = ""
         
-        # BUG 3: Iteración incorrecta sobre un diccionario en Python
-        for estudiante, notas in self.estudiantes:
+        # BUG 3: solucionado
+        for estudiante, notas in self.estudiantes.items():
             promedio = self.calcular_promedio(estudiante)
             if promedio > mejor_promedio:
                 mejor_promedio = promedio
