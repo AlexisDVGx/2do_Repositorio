@@ -11,8 +11,8 @@ class GestorCalificaciones:
         notas = self.estudiantes[nombre]
         suma = 0
         for nota in notas:
-            # BUG 1: Lógica incorrecta en la suma
-            suma += nota 
+            # BUG 1: Solucionado
+            suma = sum(notas)
         
         
         # BUG 2 Resuelto: Validación para evitar división por cero
